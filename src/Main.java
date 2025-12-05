@@ -209,9 +209,9 @@ public class Main implements FileOperations, ReportGenerator {
     public static void main(String[] args) {
         Main system = new Main();
 
-        String patientsFile = "C:\\Users\\USER\\IdeaProjects\\Lab_Work_OOP\\src\\data\\patients.txt";
-        String appointmentsFile = "C:\\Users\\USER\\IdeaProjects\\Lab_Work_OOP\\src\\data\\appointment.txt";
-        String medicalRecordsFile = "C:\\Users\\USER\\IdeaProjects\\Lab_Work_OOP\\src\\data\\medicalRecords.txt";
+        String patientsFile = "patients.txt";
+        String appointmentsFile = "appointment.txt";
+        String medicalRecordsFile = "medicalRecords.txt";
 
         try {
             System.out.println("Loading data from files...");
