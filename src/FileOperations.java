@@ -1,7 +1,8 @@
-public interface FileOperations {
-    void save(String filename, Object data);
+import java.io.IOException;
 
-    Object load( String filename);
+public interface FileOperations {
+    void saveToFile(String filename) throws IOException;
+    void loadFromFile(String filename) throws IOException;
 
 
 }

@@ -1,4 +1,6 @@
 public interface ReportGenerator {
 
-    String generateReport();
+    String generatePatientReport(int patientId);
+    String generateDailyAppointments(String date);
+
 }
