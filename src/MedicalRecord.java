@@ -1,59 +1,68 @@
+import java.util.Date;
+
 public class MedicalRecord {
-    private double temperature;
-    private String allergies;
-    private double systolicBloodPressure;
-    private double diastolicBloodPressure;
+    private String diagnosis;
+    private String treatment;
+    private Date visitDate;
+    private String doctorName;
+    private String prescription;
 
-    public MedicalRecord(double temperature, String allergies, double systolicBloodPressure, double diastolicBloodPressure) {
-        this.temperature = temperature;
-        this.allergies = allergies;
-        this.systolicBloodPressure = systolicBloodPressure;
-        this.diastolicBloodPressure = diastolicBloodPressure;
+    public MedicalRecord(String diagnosis, String treatment, Date visitDate, String doctorName, String prescription) {
+        this.diagnosis = diagnosis;
+        this.treatment = treatment;
+        this.visitDate = visitDate;
+        this.doctorName = doctorName;
+        this.prescription = prescription;
     }
 
-    public double getTemperature() {
-        return temperature;
+    public String getDiagnosis() {
+        return diagnosis;
     }
 
-    public void setTemperature(double temperature) {
-        this.temperature = temperature;
+    public void setDiagnosis(String diagnosis) {
+        this.diagnosis = diagnosis;
     }
 
-    public String getAllergies() {
-        return allergies;
+    public String getTreatment() {
+        return treatment;
     }
 
-    public void setAllergies(String allergies) {
-        this.allergies = allergies;
+    public void setTreatment(String treatment) {
+        this.treatment = treatment;
     }
 
-    public double getSystolicBloodPressure() {
-        return systolicBloodPressure;
+    public Date getVisitDate() {
+        return visitDate;
     }
 
-    public void setSystolicBloodPressure(double systolicBloodPressure) {
-        this.systolicBloodPressure = systolicBloodPressure;
+    public void setVisitDate(Date visitDate) {
+        this.visitDate = visitDate;
     }
 
-    public double getDiastolicBloodPressure() {
-        return diastolicBloodPressure;
+    public String getDoctorName() {
+        return doctorName;
     }
 
-    public void setDiastolicBloodPressure(double diastolicBloodPressure) {
-        this.diastolicBloodPressure = diastolicBloodPressure;
+    public void setDoctorName(String doctorName) {
+        this.doctorName = doctorName;
     }
-    public enum bloodTypes{
-        O_POSITIVE,
-        O_NEGATIVE,
-        A_POSITIVE,
-        A_NEGATIVE,
-        B_POSITIVE,
-        B_NEGATIVE,
-        AB_POSITIVE,
-        AB_NEGATIVE;
 
+    public String getPrescription() {
+        return prescription;
+    }
 
+    public void setPrescription(String prescription) {
+        this.prescription = prescription;
+    }
 
-
+    @Override
+    public String toString() {
+        return "MedicalRecord{" +
+                "diagnosis='" + diagnosis + '\'' +
+                ", treatment='" + treatment + '\'' +
+                ", visitDate=" + visitDate +
+                ", doctorName='" + doctorName + '\'' +
+                ", prescription='" + prescription + '\'' +
+                '}';
     }
 }

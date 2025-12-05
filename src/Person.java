@@ -18,6 +18,10 @@ abstract class Person {
     Person(String name, int age, String gender, String email, String phone) {
     }
 
+    public Person() {
+
+    }
+
 
     public String getName() {
         return name;
